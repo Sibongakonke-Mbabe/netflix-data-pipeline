@@ -1,0 +1,46 @@
+
+services:
+
+  #PostgreSQL container
+  postgres-db:
+    image: postgres:16-alpine
+    container_name: postgres_container
+
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+    restart: unless-stopped
+
+    
+  #pgdminer container
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin_contaner
+
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+
+    ports:
+      - "5050:80"
+
+    depends_on:
+      - postgres-db
+    
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  pgadmin_data:
+  

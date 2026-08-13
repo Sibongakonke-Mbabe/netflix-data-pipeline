@@ -236,6 +236,7 @@ netflix-data-pipeline/
 
 - Git repository created
 - Initial project structure
+- Docker (Docker Compose and Docker Desktop)
 
 ### Currently Learning
 
@@ -243,7 +244,7 @@ netflix-data-pipeline/
 - IBM Relational Database Management Systems
 - SQL
 - PostgreSQL
-- Docker (Docker Compose and Docker Desktop)
+
 
 ### Next Step
 
@@ -280,7 +281,7 @@ docker compose up -d
 ## Open Adminer
 
 ```
-http://localhost:8080
+http://localhost:5050
 ```
 
 Example connection:
