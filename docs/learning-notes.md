@@ -130,3 +130,70 @@ I now understand that these are not simply separate technologies being connected
 ## Key Takeaway
 
 Completing Modules 1 and 2 gave me a stronger theoretical foundation in Data Engineering. I now have a clearer understanding of how data moves from its original source through processing and storage systems before eventually being used for analytics and reporting. This has also helped me better understand the reasoning behind the architecture I originally selected for this project.
+
+---
+
+
+
+# Day 4 — IBM Data Engineering Basics for Everyone Completed 🎓
+
+**Date:** 15 September 2026
+
+
+### Progress
+
+Today I completed the **IBM Data Engineering Basics for Everyone** course on edX and earned my course certificate.
+
+I completed **Modules 3 and 4**, finishing the full course curriculum. Module 3 focused on the **Data Engineering Lifecycle**, while Module 4 provided perspectives from experienced data engineering professionals on their careers, changes in the role, and how the data engineering industry has evolved.
+
+### Module 3 — Data Engineering Lifecycle
+
+The main concepts I learned were:
+
+- **Data Platform Architecture:** A data platform can be divided into Data Ingestion, Storage & Integration, Processing, and Analysis/UI layers, with data pipelines connecting these layers.
+- **Selecting Data Stores:** Choosing a data store depends on factors such as the structure and volume of the data, scalability, performance, availability, security, and the intended workload.
+- **Data Security:** Data platforms must protect data throughout its lifecycle using appropriate authentication, authorization, encryption, access controls, and security practices.
+- **Data Collection & Importing:** Data can be gathered from different sources and imported into data platforms using batch or streaming approaches.
+- **Data Wrangling:** Raw data often needs to be cleaned, transformed, structured, and validated before it can be reliably used for analysis.
+- **Data Wrangling Tools:** Different tools can be selected depending on the size, format, and complexity of the data, including Python-based tools and dedicated data preparation platforms.
+- **Loading Data:** Practised loading CSV data into an IBM Db2 relational database.
+- **Querying & Analysis:** Used SQL queries to explore and retrieve information from datasets stored in a relational database.
+- **Performance Tuning & Troubleshooting:** Learned that data systems need to be monitored and optimized to maintain efficient query and processing performance.
+- **Data Governance & Compliance:** Learned the importance of maintaining data quality, integrity, security, privacy, and compliance throughout the data lifecycle.
+
+### Module 4 — Data Engineering Career Perspectives
+
+Module 4 focused mainly on experiences shared by professionals working in Data Engineering.
+
+The key takeaway was that **Data Engineering continues to evolve alongside changes in data volume, cloud computing, distributed systems, tools, and business requirements**. Data Engineers therefore need to continuously learn and adapt rather than depend on a single technology or tool.
+
+### Hands-on Experience
+
+During Module 3, I also completed practical labs where I:
+
+- Loaded CSV data into an IBM Db2 database.
+- Explored datasets using SQL queries.
+- Applied concepts from the course to working with a relational database.
+
+### Connection to My Netflix Data Pipeline
+
+The course helped me understand that the technologies in this project each have a specific role within a larger data platform architecture:
+
+```text
+Movie Ratings CSV
+       │
+       ▼
+Data Ingestion
+   Python
+       │
+       ▼
+Data Processing
+ Python / Pandas
+       │
+       ▼
+Data Storage
+  PostgreSQL
+       │
+       ▼
+Analysis & UI
+   Metabase
