@@ -67,7 +67,7 @@ Rather than building everything at once, this project grows as I learn new techn
 | Docker | Containerization |
 | Docker Compose | Multi-container management |
 | PostgreSQL | Relational Database |
-| Adminer | Database Administration |
+| pgAdmin | Database Administration |
 | Python | ETL Development |
 | Pandas | Data Cleaning & Transformation |
 | Apache Spark | Large-scale Data Processing *(planned)* |
