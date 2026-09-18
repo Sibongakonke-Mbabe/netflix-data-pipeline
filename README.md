@@ -352,6 +352,7 @@ WeThinkCode_ Student
 Aspiring Data Engineer
 
 
-## WeThinkCode Verification
+## WeThinkCode Verification.
 WTC-5FNRDE5M
+
 
