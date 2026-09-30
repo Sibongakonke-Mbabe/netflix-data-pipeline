@@ -197,3 +197,76 @@ Data Storage
        ▼
 Analysis & UI
    Metabase
+```
+
+---
+
+
+
+
+
+# Day 5 — IBM Relational Database Management Systems Completed 🎓
+
+**Date:** 30 September 2026
+
+### Progress
+
+Since the last time I worked directly on the **Netflix Data Pipeline** project, I have been focusing on strengthening my database knowledge by completing the **Relational Database Management Systems** course on **IBM SkillsBuild**.
+
+Today I completed the full course.
+
+This course focused on how relational databases are structured, designed, and queried. It gave me a stronger foundation for the PostgreSQL part of my Data Engineering project and helped me understand how to design the database before loading and processing the data.
+
+### What I Learned
+
+The main concepts I learned were:
+
+- **Relational Databases:** An RDBMS organizes data into structured tables consisting of rows and columns.
+- **ER Diagrams:** ER diagrams provide a visual representation of entities, attributes, and relationships within a database.
+- **Relationships & Cardinality:** Learned how to identify relationships between entities and determine how many records can be associated with each other.
+- **Database Schemas:** A schema defines how tables, columns, keys, and relationships are organized within a database.
+- **Primary Keys:** Used to uniquely identify each record within a table.
+- **Foreign Keys:** Used to establish relationships between tables.
+- **Referential Integrity:** Ensures that relationships between related tables remain valid and consistent.
+- **ACID Properties:** Learned how Atomicity, Consistency, Isolation, and Durability support reliable database transactions.
+- **SQL Filtering & Sorting:** Used `WHERE` to filter records and `ORDER BY` to sort query results.
+- **SQL Joins:** Learned how `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN` combine related data from multiple tables.
+- **SQL Aggregation:** Used functions such as `COUNT`, `AVG`, `MIN`, `MAX`, and `SUM` to calculate information from datasets.
+- **GROUP BY & HAVING:** Learned how to group records for analysis and filter aggregated results.
+
+### Hands-on Experience
+
+During the course, I worked with relational database concepts and SQL queries to understand how data can be stored, related, filtered, joined, and analyzed.
+
+The course also helped me understand the importance of designing the database structure before loading data into it.
+
+### Connection to My Netflix Data Pipeline
+
+The knowledge from this course will be applied directly to the next stage of my project.
+
+I will first inspect the **MovieLens dataset** and understand the structure of the CSV files, including the available columns and the relationships between the data.
+
+I will then use what I learned about **entities, attributes, relationships, cardinality, primary keys, foreign keys, and normalization** to design the PostgreSQL database schema.
+
+The planned process is:
+
+```text
+MovieLens Dataset
+       │
+       ▼
+Inspect CSV Files
+       │
+       ▼
+Identify Entities & Relationships
+       │
+       ▼
+Design ER Diagram
+       │
+       ▼
+Create PostgreSQL Schema
+       │
+       ▼
+Load Data
+       │
+       ▼
+Query & Analyse Data
