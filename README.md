@@ -186,20 +186,20 @@ netflix-data-pipeline/
 
 ## Phase 2 — Database
 
-- [ ] Learn SQL
-- [ ] Design database schema
-- [ ] Create tables
-- [ ] Add relationships
+- [x] Learn SQL
+- [x] Design database schema
+- [x] Create tables
+- [x] Add relationships
 - [ ] Create indexes
 
 ---
 
 ## Phase 3 — ETL Pipeline
 
-- [ ] Read CSV files
-- [ ] Clean missing values
-- [ ] Transform data
-- [ ] Load into PostgreSQL
+- [x] Read CSV files
+- [x] Clean missing values
+- [x] Transform data
+- [x] Load into PostgreSQL
 
 ---
 
