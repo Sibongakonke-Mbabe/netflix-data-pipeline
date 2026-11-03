@@ -19,7 +19,7 @@ services:
 
     restart: unless-stopped
 
-    
+
   #pgdminer container
   pgadmin:
     image: dpage/pgadmin4:latest
@@ -40,8 +40,26 @@ services:
 
     restart: unless-stopped
 
+
+  # Metabase container
+  metabase:
+    image: metabase/metabase:latest
+    container_name: metabase_container
+
+    ports:
+      - "3000:3000"
+
+    depends_on:
+      - postgres-db
+
+    volumes:
+      - metabase_data:/metabase.db
+
+    restart: unless-stopped
+
 volumes:
   pgdata:
   pgadmin_data:
+  metabase_data:
   
 

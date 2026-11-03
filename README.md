@@ -190,7 +190,7 @@ netflix-data-pipeline/
 - [x] Design database schema
 - [x] Create tables
 - [x] Add relationships
-- [ ] Create indexes
+- [x] Create indexes
 
 ---
 
@@ -205,18 +205,18 @@ netflix-data-pipeline/
 
 ## Phase 4 — Analytics
 
-- [ ] SQL reporting
-- [ ] Aggregate movie statistics
-- [ ] Top-rated movies
-- [ ] Most rated genres
+- [x] SQL reporting
+- [x] Aggregate movie statistics
+- [x] Top-rated movies
+- [x] Most rated genres
 
 ---
 
 ## Phase 5 — Dashboard
 
-- [ ] Connect Metabase
-- [ ] Create dashboards
-- [ ] Publish analytics
+- [x] Connect Metabase
+- [x] Create dashboards
+- [x] Publish analytics
 
 ---
 
@@ -298,6 +298,7 @@ Example connection:
 
 # 📚 Learning Journey
 
+
 This repository is intentionally developed over time.
 
 Instead of uploading a finished project, each commit represents a new concept or skill learned through coursework and hands-on practice.
@@ -318,6 +319,7 @@ Examples include:
 
 # 💡 Future Improvements
 
+
 - Scheduled ETL jobs
 - Incremental data loading
 - Data validation
@@ -326,6 +328,7 @@ Examples include:
 - CI/CD with GitHub Actions
 - Cloud deployment
 - Data quality monitoring
+
 
 ---
 

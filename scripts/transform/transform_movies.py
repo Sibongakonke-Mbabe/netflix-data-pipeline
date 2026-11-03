@@ -7,16 +7,20 @@ os.makedirs("data/processed", exist_ok=True)
 # File paths
 raw_movies_path = "data/raw/ml-latest-small/movies.csv"
 
+
 # Read raw data
 movies_df = pd.read_csv(raw_movies_path)
+
 
 # Data Transformation 
 
 # Renaming the column
 movies_df = movies_df.rename(columns={"movieId": "movie_id"})
 
+
 # Extracting the release Year from the title, if the the Year is missing replace with NA
 movies_df["release_year"] = movies_df["title"].str.extract(r"\((\d{4})").astype("Int64")
+
 
 # Removing the release Year from the title
 movies_df["title"] = movies_df["title"].str.replace(
